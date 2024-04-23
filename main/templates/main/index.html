@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /></head
+  ><link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-V+Kek6gnt4t78R0Q6KlVr+Zg7JnSW7izTXRRiK1gtfyr8ylVTrZQUDxXylnvDq5v/yB8uNv0/t2IzLY6Kb9PdA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <body>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light ministry_navbar"
+      id="theNav"
+    >
+      <div class="container-fluid ministry_container">
+        <a href="/" title="MOD" class="navbar-brand">
+          <img
+            src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=1679&amp;token=c456432515e20118795fbbd0cce379ac2bcd0a14"
+            alt="Image"
+            height="48"
+          />
+        </a>
+        <a href="/" title="MOD" class="navbar-brand logotext" style="padding-right: 200px;">
+          <p class="txt_subtitle fnt_black mabo0">MOD</p>
+        </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="navbar-hamburger" class="navbar-toggler-icon"></span>
+          <span id="navbar-close" class="hidden"
+            ><i class="material-icons txt_content">close</i></span
+          >
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav mx-auto">
+            <button
+              type="button"
+              class="nav-item-tab active"
+              id="nav-item-tab-1"
+            >
+              Home
+            </button>
+            <button type="button" class="nav-item-tab" id="nav-item-tab-2">
+              Form
+            </button>
+          </div>
+          <!-- <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+              <a class="nav-link main_option active" href="/" title="Home">
+                Home
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link main_option"
+                href="/the-ministry/overview"
+                title="The Ministry"
+              >
+                The Ministry
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link main_option" href="/rdf/overview" title="RDF">
+                RDF
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link main_option"
+                href="/activities"
+                title="Activities"
+              >
+                Activities
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link main_option" href="/news" title="Updates">
+                Updates
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link main_option"
+                href="/publications/publications"
+                title="Publications"
+              >
+                Publications
+              </a>
+            </li>
+          </ul> -->
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <form
+                method="get"
+                id="form_kesearch_pi1"
+                class="search-form"
+                name="form_kesearch_pi1"
+                autocomplete="off"
+              >
+                <div class="search__wrapper">
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="574"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    class="search__field"
+                    name="tx_kesearch_pi1[sword]"
+                    value=""
+                    placeholder="Search"
+                    autocomplete="off"
+                    spellcheck="false"
+                    data-ms-editor="true"
+                  />
+                  <button
+                    class="search__icon txt_grey"
+                    onclick="this.form.searchword.focus();"
+                    type="submit"
+                  >
+                    <i class="fa fa-search"></i>
+                  </button>
+
+                  <input
+                    id="header_kesearchpagenumber_p1"
+                    type="hidden"
+                    name="tx_kesearch_pi1[page]"
+                    value="1"
+                    autocomplete="off"
+                  />
+                  <input
+                    id="header_resetFilters_p1"
+                    type="hidden"
+                    name="tx_kesearch_pi1[resetFilters]"
+                    value="0"
+                    autocomplete="off"
+                  />
+                  <input
+                    id="header_sortByField_p1"
+                    type="hidden"
+                    name="tx_kesearch_pi1[sortByField]"
+                    value=""
+                    autocomplete="off"
+                  />
+                  <input
+                    id="header_sortByDir_p1"
+                    type="hidden"
+                    name="tx_kesearch_pi1[sortByDir]"
+                    value=""
+                    autocomplete="off"
+                  />
+                </div>
+              </form>
+            </li>
+            <li></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                title="English"
+              >
+                English
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                    hreflang="en-US"
+                    title="English"
+                  >
+                    English
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link txt_black">|</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="https://www.gov.rw/"
+                title="GOV.RW"
+                target="_blank"
+                class="nav-link gov_link"
+              >
+                GOV.RW
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-container" id="main-container-form">
+      <div class="top-nav">
+        <div class="left-nav">
+          <img src="/static/images/mod.png" alt="mod image" class="mod-image" />
+          <div class="logo-info">
+            <h3>MINADEF</h3>
+            <span>Rwanda Defense force</span>
+          </div>
+        </div>
+        <div class="right-nav">
+          <button type="button">Submit</button>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Create Profile</h3>
+        <div class="form-section-tracker">
+          <div class="form-section-track">
+            <p class="track active">1</p>
+            <span class="track-details">personal details</span>
+          </div>
+          <div class="form-section-track">
+            <p class="track">2</p>
+            <span class="track-details">Education Background</span>
+          </div>
+          <div class="form-section-track">
+            <p class="track">3</p>
+            <span class="track-details">Work Experience</span>
+          </div>
+          <div class="form-section-track">
+            <p class="track">4</p>
+            <span class="track-details">Skills</span>
+          </div>
+        </div>
+        <div class="form-card">
+          <h3>Personal Details</h3>
+
+          <form class="register-form">
+            <div class="form-group-section">
+              <div class="form-group">
+                <label for="Inputfirstname">First Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  aria-describedby="firstnameHelp"
+                  placeholder="Enter first name"
+                  id="Inputfirstname"
+                />
+              </div>
+              <div class="form-group">
+                <label for="Inputlastname">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  aria-describedby="firstnameHelp"
+                  id="Inputlastname"
+                  placeholder="Enter last name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                style="border-radius: 7px;"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div style="display: flex; align-items: center" class="dropdown-section">
+              <div style="width: 100%; flex: 1">
+                <label for="Inputlastname">Select Date</label>
+                <div style="display: flex; align-items: center; gap: 5px">
+                  <div class="col-sm-1">
+                    <select
+                      class="form-control"
+                      id="daySelect"
+                      style="border-radius: 7px"
+                    >
+                      <option value="">Day</option>
+                      <!-- Options for days will be populated dynamically -->
+                    </select>
+                  </div>
+                  <div class="col-sm-2">
+                    <select
+                      class="form-control"
+                      id="monthSelect"
+                      style="border-radius: 7px"
+                    >
+                      <option value="">Month</option>
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-1">
+                    <select
+                      class="form-control"
+                      id="yearSelect"
+                      style="border-radius: 7px"
+                    >
+                      <option value="">Year</option>
+                      <!-- Options for years will be populated dynamically -->
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-right: 20px" class="form-group gender-section-radio">
+                <label for="Inputlastname">Gender</label>
+                <div style="display: flex; align-items: center; gap: 20px">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios1"
+                      value="option1"
+                      checked
+                    />
+                    <label class="form-check-label" for="exampleRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="exampleRadios2">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="exampleRadios"
+                      id="exampleRadios3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="exampleRadios3">
+                      Prefer not to say
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Location of residence</label>
+              <div class="col-sm-2">
+                <select
+                  class="form-control"
+                  id="district-dropdown"
+                  style="border-radius: 7px"
+                >
+                  <option value="">District</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group col-sm-4">
+              <label for="exampleInputPassword1">
+                Personal Identification Number
+              </label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Provide exact 16 characters"
+                style="border-radius: 7px;"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="main-container main-active" id="main-container">
+      <div
+        class="container-fluid d-flex"
+        id="section_landing"
+        style="
+          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+            url(https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=5470&amp;token=45568db306ebb40e15557b2480c7663423855337);
+        "
+      >
+        <div class="container align-self-center pad0">
+          <a id="c2819"></a>
+          <div class="news">
+            <div class="events" id="eventsContainer" style="display: none">
+              <div class="dropdown show" id="notif_dropdown">
+                <a
+                  class="text-right float-right"
+                  data-bs-toggle="dropdown"
+                  data-bs-dismiss="alert"
+                  data-display="static"
+                  data-toggle="dropdown"
+                  data-dismiss="alert"
+                  aria-expanded="true"
+                >
+                  <i
+                    class="fas fa-times event_toggle"
+                    id="notif_icon"
+                    title="Close"
+                  ></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right event_container show"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col-md-6 col-sm-8 pad0">
+            <p class="txt_head txt_white mabo16">MOD</p>
+            <p class="txt_title txt_white fnt_light mabo32">
+              Ministry of Defence
+            </p>
+            <form
+              method="get"
+              id="form_kesearch_pi2"
+              class="search-form"
+              name="form_kesearch_pi2"
+              autocomplete="off"
+            >
+              <div class="input-group mb-3">
+                <input type="hidden" name="id" value="574" autocomplete="off" />
+                <input
+                  type="text"
+                  class="form-control input_big txt_content txt_black"
+                  id="ke_search_sword"
+                  name="tx_kesearch_pi1[sword]"
+                  value=""
+                  placeholder="What are you looking for?"
+                  autocomplete="off"
+                  spellcheck="false"
+                  data-ms-editor="true"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn_section_landing"
+                    onclick="this.form.searchword.focus();"
+                    type="submit"
+                  >
+                    <span class="show_phone"
+                      ><i class="material-icons">search</i></span
+                    ><span class="hide_phone">Search</span>
+                  </button>
+                </div>
+                <input
+                  id="kesearchpagenumber_p2"
+                  type="hidden"
+                  name="tx_kesearch_pi1[page]"
+                  value="1"
+                  autocomplete="off"
+                />
+                <input
+                  id="resetFilters_p2"
+                  type="hidden"
+                  name="tx_kesearch_pi1[resetFilters]"
+                  value="0"
+                  autocomplete="off"
+                />
+                <input
+                  id="sortByField_p2"
+                  type="hidden"
+                  name="tx_kesearch_pi1[sortByField]"
+                  value=""
+                  autocomplete="off"
+                />
+                <input
+                  id="sortByDir_p2"
+                  type="hidden"
+                  name="tx_kesearch_pi1[sortByDir]"
+                  value=""
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="section_affiliated">
+        <div class="container pad0">
+          <div class="col-12 col-lg-12 col-md-12 col-sm-6 align-self-center">
+            <p class="txt_title txt_black">RDF Services</p>
+          </div>
+          <div class="col-12 mato32">
+            <div class="row">
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <center>
+                    <img
+                      src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=5482&amp;token=d9f9d576fd73f2386eb2a9eb07d41d166daf5f5b"
+                      class="mabo8"
+                      height="70"
+                      alt="Service"
+                    />
+                  </center>
+                  <hr />
+
+                  <p class="txt_subtitle txt_black text-center">Army</p>
+                  <p class="txt_content txt_grey mato16 text-justify">
+                    The Army is one of the three services comprising the RDF. It
+                    evolved ..
+                  </p>
+
+                  <a
+                    href="https://www.mod.gov.rw/army"
+                    title="Army"
+                    target="_blank"
+                    class="btn btn_link"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <center>
+                    <img
+                      src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=5484&amp;token=032317264c396891708324884d5f9a2f4a90050c"
+                      class="mabo8"
+                      height="70"
+                      alt="Service"
+                    />
+                  </center>
+                  <hr />
+
+                  <p class="txt_subtitle txt_black text-center">Air Force</p>
+                  <p class="txt_content txt_grey mato16 text-justify">
+                    Rwanda Air Force is tasked with defending Rwandan Air
+                    space..
+                  </p>
+
+                  <a
+                    href="https://www.mod.gov.rw/air-force"
+                    title="Air Force"
+                    target="_blank"
+                    class="btn btn_link"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <center>
+                    <img
+                      src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=5483&amp;token=b55a7ec3801e1bcbc2b0a118a54bac13a83ed32c"
+                      class="mabo8"
+                      height="70"
+                      alt="Service"
+                    />
+                  </center>
+                  <hr />
+
+                  <p class="txt_subtitle txt_black text-center">
+                    Reserve Force
+                  </p>
+                  <p class="txt_content txt_grey mato16 text-justify">
+                    The Reserve Force refers to a part-time military service of
+                    the Rwanda..
+                  </p>
+
+                  <a
+                    href="https://www.mod.gov.rw/reserve-force"
+                    title="Reserve Force"
+                    target="_blank"
+                    class="btn btn_link"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg_grey" id="section_updates">
+        <div class="container">
+          <a id="c9538"></a>
+
+          <div class="container pad0 main-content">
+            <div class="row mabo32">
+              <div class="col-7 pad032">
+                <p class="txt_title txt_black mabo32">Latest News</p>
+              </div>
+              <!-- <div class="col-5 pad032">
+              <div class="owl-theme updates_controls">
+                <div class="owl-controls">
+                  <div class="custom-nav owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev">
+                      <i
+                        class="fas fa-chevron-left txt_subtitle txt_black upd_ctrl prev"
+                      ></i></button
+                    ><button type="button" role="presentation" class="owl-next">
+                      <i
+                        class="fas fa-chevron-right txt_subtitle txt_black upd_ctrl next"
+                      ></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            </div>
+          </div>
+
+          <div class="container pad0">
+            <a id="c9539"></a>
+
+            <div class="news">
+              <div class="owl-carousel owl-loaded owl-drag" id="carousel-news">
+                <div class="owl-stage-outer">
+                  <div
+                    class="owl-stage"
+                    style="
+                      transition: all 0.25s ease 0s;
+                      width: 4440px;
+                      transform: translate3d(-1110px, 0px, 0px);
+                    "
+                  >
+                    <div class="owl-item active" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=259901&amp;token=d6a6cf87e15fd19536abb75e1071e60b0f620b75"
+                              width="350"
+                              height="183"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+
+                          <a
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              Armed Forces delegates from EAC meet in Rwanda for
+                              final planning of USHIRIKIANO IMARA 2024
+                            </h3>
+                          </a>
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Kigali, 22 April 2024</p>
+                            <p>
+                              Today, Armed Forces delegates from East African
+                              Community (EAC) member states, comprising
+                              military, police, prisons,…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item active center" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=259223&amp;token=76ab66d73f879ae5b6c60d2160a6f127dbb37a3b"
+                              width="350"
+                              height="218"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+
+                          <a
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              THE UNMISS FORCE COMMANDER VISITS RWANDAN
+                              PEACEKEEPERS IN SOUTH SUDAN
+                            </h3>
+                          </a>
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Juba, 17 April 2024</p>
+                            <p>
+                              The Force Commander of the United Nations Mission
+                              in South Sudan (UNMISS), Lt Gen Mohan Subramanian,
+                              paid a visit to the Rwandan…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item active" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=258896&amp;token=a1437aa2474223b909ce2bab27bddc28bfd27300"
+                              width="350"
+                              height="234"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+
+                          <a
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT
+                              2024 KICKS OFF
+                            </h3>
+                          </a>
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Kigali, 16 April 2024</p>
+                            <p>
+                              The Rwanda Defence Force (RDF) Liberation Cup
+                              Tournament 2024 edition start off in Kigali with
+                              seven sports disciplines…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="H.E PRESIDENT PAUL KAGAME COMMISSIONS 624 NEW RDF CADET OFFICERS"
+                            href="https://www.mod.gov.rw/news-detail/he-president-paul-kagame-commissions-624-new-rdf-cadet-officers"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=258675&amp;token=45e54b8c49e25bcb6636fcf815f596a8e5af12ef"
+                              width="350"
+                              height="263"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+                          <a
+                            title="H.E PRESIDENT PAUL KAGAME COMMISSIONS 624 NEW RDF CADET OFFICERS"
+                            href="https://www.mod.gov.rw/news-detail/he-president-paul-kagame-commissions-624-new-rdf-cadet-officers"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              H.E PRESIDENT PAUL KAGAME COMMISSIONS 624 NEW RDF
+                              CADET OFFICERS
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>
+                              Bugesera, 15 April 2024<br />
+                              &nbsp;<br />
+                              Today, H.E President Paul Kagame and the
+                              Commander-in-Chief of the Rwanda Defence Force
+                              (RDF), commissioned 624 new officers…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="H.E PRESIDENT PAUL KAGAME COMMISSIONS 624 NEW RDF CADET OFFICERS"
+                            href="https://www.mod.gov.rw/news-detail/he-president-paul-kagame-commissions-624-new-rdf-cadet-officers"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="THE HEAD OF THE DIPLOMATIC MISSION IN THE CENTRAL AFRICAN REPUBLIC JOINED THE RWANDAN BILATERAL FORCE TO MARK THE 30TH&nbsp;COMMEMORATION OF THE 1994 GENOCIDE AGAINST THE TUTSI&nbsp;"
+                            href="https://www.mod.gov.rw/news-detail/the-head-of-the-diplomatic-mission-in-the-central-african-republic-joined-the-rwandan-bilateral-force-to-mark-the-30th-commemoration-of-the-1994-genocide-against-the-tutsi"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=257708&amp;token=a66517bb0f3ecf38da5abd421bb308dbe67d9c36"
+                              width="350"
+                              height="219"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+
+                          <a
+                            title="THE HEAD OF THE DIPLOMATIC MISSION IN THE CENTRAL AFRICAN REPUBLIC JOINED THE RWANDAN BILATERAL FORCE TO MARK THE 30TH&nbsp;COMMEMORATION OF THE 1994 GENOCIDE AGAINST THE TUTSI&nbsp;"
+                            href="https://www.mod.gov.rw/news-detail/the-head-of-the-diplomatic-mission-in-the-central-african-republic-joined-the-rwandan-bilateral-force-to-mark-the-30th-commemoration-of-the-1994-genocide-against-the-tutsi"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              THE HEAD OF THE DIPLOMATIC MISSION IN THE CENTRAL
+                              AFRICAN REPUBLIC JOINED THE RWANDAN BILATERAL
+                              FORCE TO MARK THE 30TH&nbsp;COMMEMORATION OF THE
+                              1994 GENOCIDE AGAINST THE TUTSI&nbsp;
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Bangui, 11 April 2024</p>
+                            <p>
+                              Yesterday, the head of the Diplomatic Mission in
+                              the Central African Republic Mr. Olivier KAYUMBA,
+                              joined the RWANDAN BILATERAL…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="THE HEAD OF THE DIPLOMATIC MISSION IN THE CENTRAL AFRICAN REPUBLIC JOINED THE RWANDAN BILATERAL FORCE TO MARK THE 30TH&nbsp;COMMEMORATION OF THE 1994 GENOCIDE AGAINST THE TUTSI&nbsp;"
+                            href="https://www.mod.gov.rw/news-detail/the-head-of-the-diplomatic-mission-in-the-central-african-republic-joined-the-rwandan-bilateral-force-to-mark-the-30th-commemoration-of-the-1994-genocide-against-the-tutsi"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="THE BELGIUM DEFENCE MINISTER PAID A COURTESY VISIT TO THE RWANDAN MINISTER OF DEFENCE"
+                            href="https://www.mod.gov.rw/news-detail/the-belgium-defence-minister-paid-a-courtesy-visit-to-the-rwandan-minister-of-defence"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=256666&amp;token=0b2ea55a948cfb6c42fabc9b6a368a055005f099"
+                              width="350"
+                              height="256"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra"></div>
+
+                          <a
+                            title="THE BELGIUM DEFENCE MINISTER PAID A COURTESY VISIT TO THE RWANDAN MINISTER OF DEFENCE"
+                            href="https://www.mod.gov.rw/news-detail/the-belgium-defence-minister-paid-a-courtesy-visit-to-the-rwandan-minister-of-defence"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              THE BELGIUM DEFENCE MINISTER PAID A COURTESY VISIT
+                              TO THE RWANDAN MINISTER OF DEFENCE
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Kigali, 08 April 2024</p>
+                            <p>
+                              Today, The Belgium Defence Minister Hon Ludivine
+                              DEDONDER, accompanied by a delegation that
+                              included the Vice-Chief of Defence…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="THE BELGIUM DEFENCE MINISTER PAID A COURTESY VISIT TO THE RWANDAN MINISTER OF DEFENCE"
+                            href="https://www.mod.gov.rw/news-detail/the-belgium-defence-minister-paid-a-courtesy-visit-to-the-rwandan-minister-of-defence"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=259901&amp;token=d6a6cf87e15fd19536abb75e1071e60b0f620b75"
+                              width="350"
+                              height="183"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra">
+                            <!-- author -->
+
+                            <!-- category -->
+                          </div>
+
+                          <a
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              Armed Forces delegates from EAC meet in Rwanda for
+                              final planning of USHIRIKIANO IMARA 2024
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Kigali, 22 April 2024</p>
+                            <p>
+                              Today, Armed Forces delegates from East African
+                              Community (EAC) member states, comprising
+                              military, police, prisons,…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="Armed Forces delegates from EAC meet in Rwanda for final planning of USHIRIKIANO IMARA 2024"
+                            href="https://www.mod.gov.rw/news-detail/armed-forces-delegates-from-eac-meet-in-rwanda-for-final-planning-of-ushirikiano-imara-2024"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=259223&amp;token=76ab66d73f879ae5b6c60d2160a6f127dbb37a3b"
+                              width="350"
+                              height="218"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra">
+                            <!-- author -->
+
+                            <!-- category -->
+                          </div>
+
+                          <a
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              THE UNMISS FORCE COMMANDER VISITS RWANDAN
+                              PEACEKEEPERS IN SOUTH SUDAN
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Juba, 17 April 2024</p>
+                            <p>
+                              The Force Commander of the United Nations Mission
+                              in South Sudan (UNMISS), Lt Gen Mohan Subramanian,
+                              paid a visit to the Rwandan…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="THE UNMISS FORCE COMMANDER VISITS RWANDAN PEACEKEEPERS IN SOUTH SUDAN"
+                            href="https://www.mod.gov.rw/news-detail/the-unmiss-force-commander-visits-rwandan-peacekeepers-in-south-sudan"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item cloned" style="width: 370px">
+                      <div class="col-12">
+                        <div class="boximg">
+                          <a
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            <img
+                              class="img-responsive blog_small_cover mabo32"
+                              src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=p&amp;p=258896&amp;token=a1437aa2474223b909ce2bab27bddc28bfd27300"
+                              width="350"
+                              height="234"
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div
+                          class="articletype-0"
+                          itemscope="itemscope"
+                          itemtype="http://schema.org/Article"
+                        >
+                          <div class="txt_info txt_grey mabo16 extra">
+                            <!-- author -->
+
+                            <!-- category -->
+                          </div>
+
+                          <a
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            <h3
+                              class="txt_content txt_black fnt_black mabo16 text-uppercase"
+                            >
+                              RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT
+                              2024 KICKS OFF
+                            </h3>
+                          </a>
+                          <!-- teaser -->
+                          <div
+                            class="txt_content txt_grey text-justify mabo16 lead"
+                          >
+                            <p>Kigali, 16 April 2024</p>
+                            <p>
+                              The Rwanda Defence Force (RDF) Liberation Cup
+                              Tournament 2024 edition start off in Kigali with
+                              seven sports disciplines…
+                            </p>
+                          </div>
+                          <a
+                            class="btn btn_link txt_blue"
+                            title="RWANDA DEFENCE FORCE LIBERATION CUP TOURNAMENT 2024 KICKS OFF"
+                            href="https://www.mod.gov.rw/news-detail/rwanda-defence-force-liberation-cup-tournament-2024-kicks-off"
+                          >
+                            Read more →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-dots">
+                  <button role="button" class="owl-dot"><span></span></button
+                  ><button role="button" class="owl-dot active">
+                    <span></span></button
+                  ><button role="button" class="owl-dot"><span></span></button
+                  ><button role="button" class="owl-dot"><span></span></button
+                  ><button role="button" class="owl-dot"><span></span></button
+                  ><button role="button" class="owl-dot"><span></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mato32 text-center">
+            <div class="row text-center justify-content-center">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                <a href="https://www.mod.gov.rw/news" title="More News" class="btn btn_blue">
+                  More News
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="section_affiliated">
+        <div class="container pad0">
+          <div class="col-12 col-lg-12 col-md-12 col-sm-6 align-self-center">
+            <p class="txt_title txt_black">RDF in Peacekeeping Missions</p>
+
+            <p
+              class="txt_content txt_grey font-weight-bold"
+              style="font-size: 20px; font-weight: 300"
+            >
+              Humanity Drives Rwanda's Peace Support Operations
+            </p>
+
+            <p class="txt_content txt_grey mabo32">
+              Rwanda is among the few if not the only peculiar country in the
+              world that is mandated by the constitution to take part in
+              peacekeeping around the world and in support of affected
+              communities. <br />Currently, Rwanda is the 4<sup>th</sup> biggest
+              troop contributing country with 4,585 military personnel in
+              support of UN peacekeeping operations in South Sudan (UNMISS) and
+              Central African Republic (MINUSCA).
+            </p>
+          </div>
+          <div class="col-12 mato32">
+            <div class="row">
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <img
+                    src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=9467&amp;token=07b73827db4870d2f58080fbb766541ab7acd01a"
+                    class="mabo8"
+                    height="60"
+                    alt="partner"
+                  />
+                  <hr />
+
+                  <p class="txt_subtitle txt_black">MINUSCA</p>
+                  <p class="txt_content txt_grey mato16">
+                    UN Multidimensional Integrated Stabilization Mission in the
+                    CAR
+                  </p>
+
+                  <a
+                    href="https://minusca.unmissions.org/"
+                    title="MINUSCA"
+                    target="_blank"
+                    class="btn btn_link"
+                    rel="noreferrer"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <img
+                    src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=9466&amp;token=12cfcec69a12b25bf40745685b386d80859b16a9"
+                    class="mabo8"
+                    height="60"
+                    alt="partner"
+                  />
+                  <hr />
+
+                  <p class="txt_subtitle txt_black">UNMISS</p>
+                  <p class="txt_content txt_grey mato16">
+                    United Nations Mission In South Sudan
+                  </p>
+
+                  <a
+                    href="https://unmiss.unmissions.org/"
+                    title="UNMISS"
+                    target="_blank"
+                    class="btn btn_link"
+                    rel="noreferrer"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 col-md-4 col-sm-6 mabo32">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 card_affiliated"
+                >
+                  <img
+                    src="https://www.mod.gov.rw/index.php?eID=dumpFile&amp;t=f&amp;f=9468&amp;token=3f8d3e0b86a109f322a42f5e228b1b61db927c5c"
+                    class="mabo8"
+                    height="60"
+                    alt="partner"
+                  />
+                  <hr />
+
+                  <p class="txt_subtitle txt_black">UNAMID</p>
+                  <p class="txt_content txt_grey mato16">
+                    UN African Union Hybrid Operation in Darfur
+                  </p>
+
+                  <a
+                    href="https://unamid.unmissions.org/"
+                    title="UNAMID"
+                    target="_blank"
+                    class="btn btn_link"
+                    rel="noreferrer"
+                  >
+                    Visit →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid"
+        id="section_footer"
+        style="margin-bottom: 0px"
+      >
+        <div class="container">
+          <div class="row pad016 d-flex">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-6 align-self-center">
+              <div class="row">
+                <div class="col-12 col-lg-8 col-md-8 col-sm-8 pad0">
+                  <p class="txt_title txt_blue fnt_black mabo32">
+                    Connect with us
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-phone mr-3"></i>MOD: +250 788 310 178
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-phone mr-3"></i>JOC: +250 788 311 163
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-phone mr-3"></i>MMI: 1535
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-phone mr-3"></i>GENDER DESK: 3945
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-envelope-open mr-3"></i>info@mod.gov.rw
+                  </p>
+
+                  <p class="mabo0">
+                    <a href="https://www.mod.gov.rw/contact" class="btn btn_link_white">
+                      <i class="fas fa-at mr-3"></i>Contact Us →
+                    </a>
+                  </p>
+
+                  <p class="txt_content txt_white">
+                    <i class="fas fa-envelope-open mr-3"></i>Check Mail
+                  </p>
+
+                  <hr />
+                  <div class="col-12 pad0">
+                    <a
+                      href="https://www.instagram.com/rwanda_defence_force/"
+                      title="Instagram"
+                      target="_blank"
+                      class="ico-class"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-instagram gov_social mt-2"></i>
+                    </a>
+
+                    <a
+                      href="https://twitter.com/RwandaMoD"
+                      title="Twitter"
+                      target="_blank"
+                      class="ico-class"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-twitter gov_social mt-2"></i>
+                    </a>
+
+                    <a
+                      href="https://www.youtube.com/user/RwandaDefenceForce"
+                      title="Youtube"
+                      target="_blank"
+                      class="ico-class"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-youtube gov_social mt-2"></i>
+                    </a>
+
+                    <a
+                      href="https://www.flickr.com/photos/rwandadefenceforce/albums"
+                      title="Flickr"
+                      target="_blank"
+                      class="ico-class"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-flickr gov_social mt-2"></i>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/company/rwanda-defence-force"
+                      title="Linkedin"
+                      target="_blank"
+                      class="ico-class"
+                      rel="noreferrer"
+                    >
+                      <i class="fab fa-linkedin gov_social mt-2"></i>
+                    </a>
+                  </div>
+                  <hr />
+                  <p class="txt_info txt_white">
+                    © 2024 Government of the Republic of Rwanda
+                  </p>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6 col-md-6 col-sm-6 pad0"
+              id="map_container"
+            >
+              <a id="c2781"></a>
+
+              <iframe
+                id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.50020302047!2d30.084959815278406!3d-1.9532138985760215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca68c8c7ad461%3A0x5c8484d75359c405!2sMinistry%20of%20Defence!5e0!3m2!1sen!2srw!4v1589967958406!5m2!1sen!2srw"
+                width="100%"
+                height="500"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/static/scripts/index.js"></script>
+  </body>
+</html>

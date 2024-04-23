@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOD - Signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {% load crispy_forms_tags %}
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        min-height: 100%;
+      }
+
+      .main .left-section {
+        width: 50%;
+        min-height: 100vh;
+        background-color: #275604;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main .right-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .main .right-section h3 {
+        color: #337700;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .main .right-section h4 {
+        color: #337700;
+        font-size: 32px;
+        margin: 0;
+      }
+
+      .main .right-section .form-group {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main .right-section .form-group input {
+        margin-bottom: 10px;
+      }
+
+      .main .right-section .form-group .btn {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #337700;
+      }
+
+      @media screen and (max-width: 600px) {
+        .main .left-section {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="left-section">
+        <img src="/static/images/mod.png" alt="mod image" class="mod-image" />
+      </div>
+      <div class="right-section">
+        <h3>Welcome Back to RDF</h3>
+        <h4>Login</h4>
+
+        <form method="POST" action="" class="form-group" autocomplete="off">
+          {% csrf_token %}
+
+          {{ form|crispy }}
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>

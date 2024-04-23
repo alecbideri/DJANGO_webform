@@ -1,0 +1,1846 @@
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/bootstrap.min.css?1712913725 ; media=all */
+@media all {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  nav {
+    display: block;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+  hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  ul ul {
+    margin-bottom: 0;
+  }
+  sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:not([href]):not([tabindex]):focus,
+  a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:not([href]):not([tabindex]):focus {
+    outline: 0;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  button {
+    border-radius: 0;
+  }
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+  button,
+  input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  button,
+  input {
+    overflow: visible;
+  }
+  button {
+    text-transform: none;
+  }
+  [type="submit"],
+  button,
+  html [type="button"] {
+    -webkit-appearance: button;
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .col,
+  .col-12,
+  .col-5,
+  .col-7,
+  .col-lg-12,
+  .col-lg-4,
+  .col-lg-6,
+  .col-lg-8,
+  .col-md-12,
+  .col-md-4,
+  .col-md-6,
+  .col-md-8,
+  .col-sm-12,
+  .col-sm-6,
+  .col-sm-8 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  .col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  @media (min-width: 576px) {
+    .col-sm-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-sm-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    .col-sm-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .col-md-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+    .col-md-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-md-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    .col-md-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-lg-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+    .col-lg-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .col-lg-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+    .col-lg-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .form-control {
+      transition: none;
+    }
+  }
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+  }
+  .form-control:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
+  .btn:focus,
+  .btn:hover {
+    text-decoration: none;
+  }
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  .btn:disabled {
+    opacity: 0.65;
+  }
+  .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  .collapse:not(.show) {
+    display: none;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+  }
+  .dropdown-toggle:empty::after {
+    margin-left: 0;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+  .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+  }
+  .dropdown-item:disabled {
+    color: #6c757d;
+    background-color: transparent;
+  }
+  .dropdown-menu.show {
+    display: block;
+  }
+  .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .input-group > .form-control {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+  }
+  .input-group > .form-control:focus {
+    z-index: 3;
+  }
+  .input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group > .form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .input-group-append {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .input-group-append .btn {
+    position: relative;
+    z-index: 2;
+  }
+  .input-group-append {
+    margin-left: -1px;
+  }
+  .input-group > .input-group-append:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group > .input-group-append > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  .nav-link:focus,
+  .nav-link:hover {
+    text-decoration: none;
+  }
+  .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  .navbar > .container-fluid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navbar-brand:focus,
+  .navbar-brand:hover {
+    text-decoration: none;
+  }
+  .navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+  }
+  .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    text-decoration: none;
+  }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+  }
+  @media (max-width: 991.98px) {
+    .navbar-expand-lg > .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg {
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+    .navbar-expand-lg .navbar-nav {
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-lg > .container-fluid {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+    }
+    .navbar-expand-lg .navbar-collapse {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler {
+      display: none;
+    }
+  }
+  .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .main-container {
+    display: none;
+  }
+  .main-active {
+    display: block;
+  }
+  .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  .align-self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+  }
+  .float-right {
+    float: right !important;
+  }
+  .mt-2 {
+    margin-top: 0.5rem !important;
+  }
+  .mr-3 {
+    margin-right: 1rem !important;
+  }
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+  .mx-auto {
+    margin-right: auto !important;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    margin-left: 100px;
+  }
+
+  .nav-item-tab {
+    margin: 5px;
+    /* height: 7px; */
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #4d4d4d;
+    border-radius: 7px;
+    transition: background-color 2ms;
+    cursor: pointer;
+  }
+  .nav-item-tab:focus {
+    border: none;
+    outline: none;
+  }
+
+  .active {
+    background-color: white;
+  }
+
+  .mx-auto {
+    margin-left: auto !important;
+  }
+  .text-justify {
+    text-align: justify !important;
+  }
+  .text-right {
+    text-align: right !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+  @media print {
+    *,
+    ::after,
+    ::before {
+      text-shadow: none !important;
+      box-shadow: none !important;
+    }
+    a:not(.btn) {
+      text-decoration: underline;
+    }
+    img {
+      page-break-inside: avoid;
+    }
+    h3,
+    p {
+      orphans: 3;
+      widows: 3;
+    }
+    h3 {
+      page-break-after: avoid;
+    }
+    body {
+      min-width: 992px !important;
+    }
+    .container {
+      min-width: 992px !important;
+    }
+    .navbar {
+      display: none;
+    }
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/index.css?1712913725 ; media=all */
+@media all {
+  body {
+    font-family: "AvenirMedium";
+    background-image: url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Images/bg_home_sect3.png");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #eventsContainer {
+    z-index: 9;
+  }
+  a {
+    text-decoration-color: none !important;
+    text-decoration: none !important;
+    outline: none;
+    color: inherit;
+  }
+  a {
+    text-decoration-color: none !important;
+    text-decoration: none !important;
+    color: inherit;
+  }
+  a:hover {
+    text-decoration-color: none !important;
+    text-decoration: none !important;
+  }
+  .event_container {
+    width: 500px !important;
+    padding-top: 32px;
+    margin-top: 32px;
+    background-color: transparent;
+    border: none;
+  }
+  .events {
+    display: block;
+    position: fixed;
+    right: 86px;
+    z-index: 2000;
+    top: calc(140px);
+  }
+  .event_toggle {
+    color: #078ece;
+    background: #fff;
+    padding: 12px;
+    width: 48px;
+    cursor: pointer;
+    text-align: center;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 999;
+    -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 0.2);
+  }
+  input[type="text"]:focus {
+    border: 2px solid #078ece !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(126, 239, 104, 0) !important;
+    outline: 0 none !important;
+    background: #fff;
+  }
+  input[type="text"]:active {
+    border: 2px solid #078ece !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(126, 239, 104, 0) !important;
+    outline: 0 none !important;
+    background: #fff;
+  }
+  .ministry_navbar {
+    background: #fff;
+    height: 70px;
+    z-index: 10;
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+  }
+  .nav-item {
+    padding-left: 8px;
+    font-family: "AvenirMedium";
+  }
+  .nav-item .nav-link {
+    font-size: 12px;
+    font-family: "AvenirMedium";
+    color: #8e8e8e;
+    font-weight: 600;
+  }
+  .nav-item .main_option {
+    text-transform: uppercase;
+    font-family: "AvenirMedium";
+    color: #000;
+  }
+  .nav-item .active {
+    color: #078ece !important;
+    font-family: "AvenirBlack";
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .gov_link {
+    color: #000 !important;
+    font-family: "AvenirBlack" !important;
+  }
+  .search__wrapper {
+    position: relative;
+  }
+  .search__field {
+    width: 32px;
+    cursor: pointer;
+    height: 32px;
+    color: transparent;
+    border-radius: 2px;
+    background-color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+  }
+  .search__field:focus {
+    border-bottom-color: #ccc;
+    width: 200px;
+    background-color: #eeeeee;
+    color: #2b2b2b;
+    cursor: default;
+  }
+  .search__field:focus ~ .search__icon {
+    background-color: transparent;
+    pointer-events: auto;
+  }
+  .search__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    cursor: pointer;
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #fff;
+    border-color: transparent;
+    border-radius: 0%;
+    pointer-events: none;
+    display: inline-block;
+    transition: background-color 0.2s ease-in-out;
+  }
+  #section_landing {
+    min-height: calc(100vh * 2 / 3);
+    background-attachment: fixed;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+  .btn_section_landing {
+    background: #078ece;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 2px;
+    font-family: "AvenirBlack";
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 48px;
+  }
+  .btn_section_landing:hover {
+    background: #054d6f;
+    color: #fff;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  #section_updates {
+    padding: 100px 16px;
+    border-top: 1px solid #eee;
+  }
+  #section_updates_twitter {
+    padding: 100px 16px;
+    border-top: 1px solid #eee;
+  }
+  .boximg {
+    max-height: 200px;
+    overflow: hidden;
+  }
+  .updates_controls {
+    float: right;
+  }
+  .upd_ctrl {
+    margin: 0 16px;
+  }
+  #section_affiliated {
+    padding: 100px 16px;
+  }
+  .card_affiliated {
+    border: 1px solid #e0e0e0;
+    padding: 32px;
+    height: 296px;
+    overflow-y: hidden;
+    background-color: #fff;
+    border-radius: 0px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  #section_footer {
+    padding: 0px 16px;
+    background: #054d6f
+      url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Images/bg_home_sect3.png)
+      no-repeat top left;
+    background-size: cover;
+    background-position: bottom;
+  }
+  #map_container {
+    width: 100%;
+    background: #eee;
+  }
+  .gov_social {
+    width: 32px;
+    height: 32px;
+    background: #078ece;
+    border-radius: 50%;
+    text-align: center;
+    padding: 8px 7px;
+    color: #fff;
+    margin-right: 8px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .gov_social:hover {
+    background: #ffffff;
+    color: #078ece;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .logotext {
+    display: inherit;
+  }
+  @media (max-width: 1280px) {
+    body {
+      font-family: "AvenirMedium";
+      background-image: none;
+      background: #ffffff;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .search__icon {
+      display: none;
+    }
+    .search__field {
+      border-bottom-color: #ccc;
+      width: 200px;
+      background-color: #eeeeee;
+      color: #2b2b2b;
+      cursor: default;
+    }
+    .collapse {
+      background: #ffffff;
+      text-align: center;
+    }
+  }
+  .show_phone {
+    display: none;
+  }
+  .hide_phone {
+    display: block;
+  }
+  @media (max-width: 767px) {
+    .show_phone {
+      display: block;
+    }
+    .hide_phone {
+      display: none;
+    }
+    .search__icon {
+      display: none;
+    }
+    .search__field {
+      border-bottom-color: #ccc;
+      width: 200px;
+      background-color: #eeeeee;
+      color: #2b2b2b;
+      cursor: default;
+    }
+    #section_updates,
+    #section_updates_twitter,
+    #section_affiliated,
+    #section_footer {
+      padding: 64px 16px !important;
+    }
+    #section_landing {
+      min-height: 70vh;
+      padding-top: 100px;
+    }
+    .collapse {
+      background: #ffffff;
+      text-align: center;
+      -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      margin-top: 32px !important;
+      padding: 32px;
+    }
+    .ministry_navbar {
+      background: #fff;
+      height: auto;
+      z-index: 10;
+      box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+    }
+    #section_footer {
+      padding: 100px 16px;
+      background: #054d6f
+        url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Images/bg_home_sect3.png)
+        no-repeat top left;
+      background-size: cover;
+      background-position: bottom;
+    }
+    .event_container {
+      margin-top: 64px;
+      width: 100% !important;
+      background-color: transparent;
+      border: none;
+    }
+    .events {
+      width: 80% !important;
+      display: block;
+      position: fixed;
+      right: 32px;
+      z-index: 2000;
+      top: calc(140px);
+    }
+  }
+  .blog_small_cover {
+    height: auto;
+    width: 100%;
+    border-radius: 2px;
+    background-size: cover !important;
+    background-position: center;
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/ministry_ui.css?1712913725 ; media=all */
+@media all {
+  input[type="text"]:focus {
+    border: 2px solid #078ece !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(126, 239, 104, 0) !important;
+    outline: 0 none !important;
+    background: #fff;
+  }
+  input[type="text"]:active {
+    border: 2px solid #078ece !important;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0) inset, 0 0 0px rgba(126, 239, 104, 0) !important;
+    outline: 0 none !important;
+    background: #fff;
+  }
+  input[type="text"] {
+    border-radius: 2px;
+    font-size: 14px;
+    color: #000000 !important;
+    border: 2px solid #ededed;
+    background: #ffffff;
+    font-family: "AvenirBook";
+  }
+  .form-control {
+    border-radius: 2px;
+    font-size: 14px;
+    color: #000000 !important;
+    border: 2px solid #ededed;
+    background: #ffffff;
+    font-family: "AvenirBook";
+  }
+  .hidden {
+    display: none;
+  }
+  .ministry_container {
+    padding: 0px 70px;
+  }
+  .txt_info {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .txt_content {
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: calc(14px * 1.5px);
+  }
+  .txt_subtitle {
+    font-size: 22px;
+    word-wrap: break-word;
+    font-family: "AvenirBlack";
+    line-height: calc(22px * 1.5px);
+  }
+  .txt_title {
+    font-size: 28px;
+    word-wrap: break-word;
+    font-family: "AvenirBlack";
+    line-height: calc(28px * 1.5px);
+  }
+  .txt_head {
+    font-size: 72px;
+    word-wrap: break-word;
+    font-family: "AvenirBlack";
+    line-height: 72px;
+  }
+  .fnt_black {
+    font-family: "AvenirBlack";
+  }
+  .fnt_light {
+    font-family: "AvenirLight";
+  }
+  .txt_blue {
+    color: #078ece;
+  }
+  .txt_grey {
+    color: #8e8e8e;
+  }
+  .txt_white {
+    color: #ffffff;
+  }
+  .txt_black {
+    color: #000000;
+  }
+  .bg_grey {
+    background-color: #f8f8f8;
+  }
+  .btn_blue {
+    background: #078ece;
+    color: #ffffff;
+    border-radius: 2px;
+    font-family: "AvenirMedium";
+    padding: 8px 48px;
+    font-size: 14px;
+  }
+  .btn_link {
+    background: transparent;
+    color: #000000;
+    border-radius: 2px;
+    font-family: "AvenirBlack";
+    padding: 8px 0px;
+    font-size: 14px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .btn_link_white {
+    background: transparent;
+    color: #ffffff;
+    border-radius: 2px;
+    font-family: "AvenirBlack";
+    padding: 8px 0px;
+    font-size: 14px;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .btn_blue:hover {
+    background: #054d6f;
+    color: #fff;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .btn_link:hover,
+  .btn_link_white:hover {
+    color: #078ece;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+  }
+  .input_big {
+    border-radius: 2px;
+    height: 48px;
+    border: 2px solid #ededed;
+    background: #ffffff;
+    font-family: "AvenirBook";
+    font-size: 14px;
+  }
+  .mabo0 {
+    margin-bottom: 0px !important;
+  }
+  .mabo16 {
+    margin-bottom: 16px;
+  }
+  .mabo32 {
+    margin-bottom: 32px;
+  }
+  .mato16 {
+    margin-top: 16px;
+  }
+  .mato32 {
+    margin-top: 32px;
+  }
+  .pad0 {
+    padding: 0px;
+  }
+  .pad016 {
+    padding: 0 16px;
+  }
+  .pad032 {
+    padding: 0 32px;
+  }
+  .dropdown-item {
+    text-transform: none !important;
+    font-size: 13px !important;
+    color: #000000 !important;
+  }
+  .dropdown-menu .dropdown-item {
+    text-transform: none !important;
+    font-size: 13px !important;
+    color: #000000 !important;
+  }
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #078ece;
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 24px;
+    -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+  }
+  @media (max-width: 1280px) {
+    .ministry_container {
+      padding: 0px 16px;
+    }
+  }
+  @media (max-width: 767px) {
+    .btn_section_landing {
+      padding: 6px 12px;
+    }
+    .ministry_container {
+      padding: 0px 16px;
+    }
+    .collapse {
+      background: rgba(255, 255, 255, 0.99);
+      -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.08);
+      margin-top: 24px;
+      padding: 98px 32px;
+    }
+    .txt_info {
+      font-size: 10px;
+    }
+    .txt_content {
+      font-size: 14px;
+    }
+    .txt_subtitle {
+      font-size: 18px;
+    }
+    .txt_title {
+      font-size: 22px;
+    }
+    .txt_head {
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/ns_twitter/Resources/Public/Css/style.css?1712913723 ; media=all */
+@media all {
+  a:focus {
+    outline: 0 none;
+  }
+  a {
+    color: #0084b4;
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/ns_twitter/Resources/Public/Css/font-awesome/css/font-awesome.min.css?1712913723 ; media=all */
+@media all {
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .fa-search:before {
+    content: "\f002";
+  }
+  .fa-times:before {
+    content: "\f00d";
+  }
+  .fa-chevron-left:before {
+    content: "\f053";
+  }
+  .fa-chevron-right:before {
+    content: "\f054";
+  }
+  .fa-phone:before {
+    content: "\f095";
+  }
+  .fa-twitter:before {
+    content: "\f099";
+  }
+  .fa-linkedin:before {
+    content: "\f0e1";
+  }
+  .fa-youtube:before {
+    content: "\f167";
+  }
+  .fa-instagram:before {
+    content: "\f16d";
+  }
+  .fa-flickr:before {
+    content: "\f16e";
+  }
+  .fa-at:before {
+    content: "\f1fa";
+  }
+  .fa-envelope-open:before {
+    content: "\f2b6";
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/material_icon.css?1712913725 ; media=all */
+@media all {
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: "liga";
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/all.css?1712913725 ; media=all */
+@media all {
+  .fa,
+  .fab,
+  .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+  .fa-at:before {
+    content: "\f1fa";
+  }
+  .fa-chevron-left:before {
+    content: "\f053";
+  }
+  .fa-chevron-right:before {
+    content: "\f054";
+  }
+  .fa-envelope-open:before {
+    content: "\f2b6";
+  }
+  .fa-flickr:before {
+    content: "\f16e";
+  }
+  .fa-instagram:before {
+    content: "\f16d";
+  }
+  .fa-linkedin:before {
+    content: "\f08c";
+  }
+  .fa-phone:before {
+    content: "\f095";
+  }
+  .fa-search:before {
+    content: "\f002";
+  }
+  .fa-times:before {
+    content: "\f00d";
+  }
+  .fa-twitter:before {
+    content: "\f099";
+  }
+  .fa-youtube:before {
+    content: "\f167";
+  }
+  .fab {
+    font-family: "Font Awesome 5 Brands";
+  }
+  .fa,
+  .fas {
+    font-family: "Font Awesome 5 Free";
+  }
+  .fa,
+  .fas {
+    font-weight: 900;
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/owl.carousel.min.css?1712913725 ; media=all */
+@media all {
+  .owl-carousel,
+  .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+  }
+  .owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+  }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+  }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+  }
+  .owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none;
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+  }
+  .owl-carousel .owl-dots.disabled {
+    display: none;
+  }
+  .owl-carousel.owl-loaded {
+    display: block;
+  }
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+  }
+  .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+/*! CSS Used from: https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Css/owl.theme.default.min.css?1712913725 ; media=all */
+@media all {
+  .owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .owl-theme .owl-nav {
+    margin-top: 10px;
+  }
+  .owl-theme .owl-nav [class*="owl-"] {
+    color: #fff;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: "AvenirMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirBook"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Medium.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AvenirBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirBlack"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Black.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AvenirBook";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirBook"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Book.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AvenirBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirBlack"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Black.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AvenirLight";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirLight"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Light.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "AvenirMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("AvenirBook"),
+    url("https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/Fonts/AvenirLTStd-Medium.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.eot);
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.woff2)
+      format("woff2"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.woff)
+      format("woff"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.ttf)
+      format("truetype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-brands-400.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.eot);
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.woff2)
+      format("woff2"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.woff)
+      format("woff"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.ttf)
+      format("truetype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-regular-400.svg#fontawesome)
+      format("svg");
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: auto;
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.eot);
+  src: url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.woff2)
+      format("woff2"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.woff)
+      format("woff"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.ttf)
+      format("truetype"),
+    url(https://www.mod.gov.rw/typo3conf/ext/risa_ministry/Resources/Public/webfonts/fa-solid-900.svg#fontawesome)
+      format("svg");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+main .top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 200px 10px 200px;
+}
+
+main .left-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+main .left-nav img {
+  width: 100px;
+  height: 100px;
+}
+
+main .left-nav .logo-info {
+  line-height: 20px;
+}
+
+main .left-nav .logo-info h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #337700;
+  margin: 0;
+  line-height: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main .left-nav .logo-info span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #337700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+main .right-nav {
+  line-height: 20px;
+}
+
+main .right-nav button {
+  background-color: #337700;
+  padding: 10px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+main .form-section {
+  padding: 30px 200px 10px 200px;
+}
+
+main .form-section h3 {
+  text-align: center;
+  color: #337700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+main .form-section .form-section-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+main .form-section .form-section-tracker .form-section-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+main .form-section .form-section-tracker .form-section-track .track {
+    width: 50px;
+    height: 50px;
+    color: #333;
+    border: 1px solid #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0;
+    cursor: pointer;
+}
+
+main .form-section .form-section-tracker .form-section-track .active {
+    background-color: #337700;
+    color: #fff;
+    border: none;
+}
+
+main .form-section .form-section-tracker .form-section-track .track-details {
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #337700;
+}
+
+main .form-section .form-card {
+  width: 100%;
+  border: 1px solid #00000040;
+  border-radius: 8px;
+  padding: 10px;
+  height: fit-content;
+  padding: 30px 10px 30px 10px;
+  margin-bottom: 50px;
+}
+
+main .form-section .form-card h3 {
+    text-align: start;
+    color: #337700;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+main .form-section .form-card .register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+
+main .form-section .form-card .form-group-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+main .form-section .form-card .form-group-section .form-group {
+    width: 100%;
+}
+
+main .form-section .form-card .form-group-section .form-group input {
+    border-radius: 7px;
+}
+
+
+@media only screen and (max-width: 600px){
+    main .top-nav {
+        padding: 30px 20px;
+    }
+
+    main .left-nav img {
+        width: 50px;
+        height: 50px;
+    }
+    main .left-nav .logo-info h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    
+    main .left-nav .logo-info span {
+        font-size: 14px;
+    }
+
+    main .form-section {
+      padding: 30px 20px;
+    }
+
+    main .form-section .form-section-tracker .form-section-track .track{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    main .form-section .form-section-tracker .form-section-track .track-details{
+        font-size: 10px;
+    }
+
+    .dropdown-section {
+        flex-direction: column;
+    }
+
+    .gender-section-radio {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}
