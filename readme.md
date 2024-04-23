@@ -16,7 +16,7 @@ python -m venv env
 3. Activate the virtual environment:
 - On Windows:
   ```
-  venv\Scripts\activate
+  env\Scripts\activate
   ```
 
 4. Navigate to the project directory:
