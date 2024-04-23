@@ -5,7 +5,7 @@ Welcome to my Django app! Here's how you can set it up on your local machine:
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/alecbideri/mod.git
+git clone https://github.com/alecbideri/DJANGO_webform.git
 
 2. Create a virtual environment (optional but recommended):
 virtualenv env
